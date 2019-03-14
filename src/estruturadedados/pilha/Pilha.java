@@ -9,6 +9,11 @@ public class Pilha<T> {
         elementos = (T[]) new Object[10];
         topo = -1;
     }
+    
+    public Pilha(int x){
+        elementos = (T[]) new Object[x];
+        topo = -1;
+    }
 
     
 

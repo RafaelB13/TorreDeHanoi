@@ -1,4 +1,4 @@
-package estruturadedados.testes;
+package questao03;
 
 import estruturadedados.pilha.Pilha;
 import java.util.Scanner;
