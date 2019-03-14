@@ -12,8 +12,7 @@ public class Torre {
         Pilha o = new Pilha();
         Pilha d = new Pilha();
         Pilha a = new Pilha();
-        
-        o.inserir(4);
+
         o.inserir(3);
         o.inserir(2);
         o.inserir(1);
@@ -41,14 +40,15 @@ public class Torre {
             System.out.println("Remover de Destino e colocar em Auxiliar  = 3");
             System.out.println("Remover de Destino e coloar em Original   = 4");
             System.out.println("Remover de Auxiliar e colocar em Original = 5");
-            System.out.println("Remover de Auxiliar e Cologar em Destino  = 6\n");
+            System.out.println("Remover de Auxiliar e Cologar em Destino  = 6");
+            System.out.println("Para encerrar o jogo = 0\n");
             System.out.print("OPÇÃO: ");
             opcao = scn.nextInt();
 
             switch (opcao) {
                 case 1:
-                    int originalDestino = o.remover(); 
-                    d.inserir(originalDestino); 
+                    int originalDestino = o.remover();
+                    d.inserir(originalDestino);
                     break;
                 case 2:
                     int originalAuxiliar = o.remover();
