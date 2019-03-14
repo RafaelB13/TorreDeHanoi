@@ -1,6 +1,6 @@
 package questao03;
 
-import estruturadedados.pilha.Pilha;
+import pilha.Pilha;
 import java.util.Scanner;
 
 public class Torre {

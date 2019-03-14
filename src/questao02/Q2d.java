@@ -1,6 +1,6 @@
 package questao02;
 
-import estruturadedados.pilha.Pilha;
+import pilha.Pilha;
 
 public class Q2d {
 

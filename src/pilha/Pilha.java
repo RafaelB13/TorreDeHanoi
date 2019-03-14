@@ -1,4 +1,4 @@
-package estruturadedados.pilha;
+package pilha;
 
 public class Pilha<T> {
 

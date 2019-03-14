@@ -1,6 +1,6 @@
 package questao05;
 
-import estruturadedados.pilha.Pilha;
+import pilha.Pilha;
 import java.util.Scanner;
 
 public class questao05 {

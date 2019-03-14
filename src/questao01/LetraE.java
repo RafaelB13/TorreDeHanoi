@@ -1,6 +1,6 @@
 package questao01;
 
-import estruturadedados.pilha.Pilha;
+import pilha.Pilha;
 
 public class LetraE {
     
