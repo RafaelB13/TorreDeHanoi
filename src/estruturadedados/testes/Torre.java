@@ -9,9 +9,9 @@ public class Torre {
 
         Scanner scn = new Scanner(System.in);
 
-        Pilha o = new Pilha();
-        Pilha d = new Pilha();
-        Pilha a = new Pilha();
+        Pilha<Integer> o = new Pilha<>();
+        Pilha<Integer> d = new Pilha<>();
+        Pilha<Integer> a = new Pilha<>();
 
         o.inserir(3);
         o.inserir(2);
@@ -70,9 +70,9 @@ public class Torre {
 
             }
 
-            System.out.println("\n\nOrigina:  " + o.toString());
-            System.out.println("Destino:  " + d.toString());
-            System.out.println("Auxiliar: " + a.toString());
+            System.out.println("\n\nOrigina:  " + o);
+            System.out.println("Destino:  " + d);
+            System.out.println("Auxiliar: " + a);
             System.out.println("\nNumero de movimentos: " + jogadas++);
         }
     }

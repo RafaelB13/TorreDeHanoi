@@ -1,23 +1,24 @@
 package estruturadedados.pilha;
 
-public class Pilha {
+public class Pilha<T> {
 
-    public int[] elementos;
+    public T[] elementos;
     public int topo;
 
     public Pilha() {
-        elementos = new int[10];
+        elementos = (T[]) new Object[10];
         topo = -1;
     }
 
     
 
-    public void inserir(int e) {
+    public boolean inserir(T e) {
         if (!estaCheia()) {
             topo++;
             elementos[topo] = e;
+            return true;
         }
-
+        return false;
     }
 
     public boolean estaVazia() {
@@ -28,11 +29,11 @@ public class Pilha {
         return this.topo == this.elementos.length - 1;
     }
 
-    public int remover() {
+    public T remover() {
         if (!estaVazia()) {
             return elementos[topo--];
         }
-        return 0;
+        return null;
 
     }
 
