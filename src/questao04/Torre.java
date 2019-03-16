@@ -1,4 +1,4 @@
-package questao03;
+package questao04;
 
 import pilha.Pilha;
 import java.util.Scanner;

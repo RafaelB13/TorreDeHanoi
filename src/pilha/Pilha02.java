@@ -1,17 +1,18 @@
 package pilha;
 
-public class Pilha<T> {
+public class Pilha02<T> {
 
     public T[] elementos;
     public int topo;
-    
+    public int topo2;
 
-    public Pilha() {
+    public Pilha02() {
         elementos = (T[]) new Object[10];
         topo = -1;
+        topo2 = elementos.length;
     }
     
-    public Pilha(int x){
+    public Pilha02(int x){
         elementos = (T[]) new Object[x];
         topo = -1;
     }
@@ -25,14 +26,27 @@ public class Pilha<T> {
         return false;
     }
     
-    
+    //Método auxiliar questao 06
+    public void inserir2(T e){
+        if(!estaCheia()){
+            elementos[--topo2] = e;
+        }
+    }
 
     public boolean estaVazia() {
         return topo == -1;
     }
+    
+    public boolean estaVazia2(){
+        return topo2 == elementos.length;
+    }
 
     public boolean estaCheia() {
         return this.topo == this.elementos.length - 1;
+    }
+    
+    public boolean estaCheia2(){
+        return topo2-topo == 1;
     }
 
     public T remover() {
@@ -42,7 +56,10 @@ public class Pilha<T> {
         return null;
 
     }
-    
+    //Método auxiliar questao 06
+    public T remover2(){
+        return elementos[topo2--];
+    }
 
     public int tamanho() {
         return this.elementos.length;
@@ -60,10 +77,10 @@ public class Pilha<T> {
                 sb.append(", ");
             }
         }
-
         sb.append("]");
 
         return sb.toString();
     }
 
 }
+
