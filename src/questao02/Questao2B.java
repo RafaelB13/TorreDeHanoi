@@ -3,7 +3,7 @@ package questao02;
 
 import pilha.Pilha;
 
-public class Q2b {
+public class Questao2B {
     
     public static void main(String[] args) {
         

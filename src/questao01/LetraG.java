@@ -1,12 +1,12 @@
-
 package questao01;
+
 import pilha.Pilha;
 
-public class Q1_g2 {
+public class LetraG {
 
     public static void main(String[] args) {
         Pilha<Integer> p = new Pilha<>(10);
-        Pilha<Integer> p2 = new Pilha<Integer>(10);
+        Pilha<Integer> p2 = new Pilha<>(10);
         Integer numero = 0;
         int i = 100;
 
@@ -24,15 +24,18 @@ public class Q1_g2 {
             numero = p.remover();
         }
 
-       // p.remover();
-        //System.out.println("removendo sem guardar" + numero);
+        p.remover();
+        System.out.println("removendo sem guardar" + numero);
 
         p.inserir(i);
         System.out.println("inserindo numero i");
 
-        while(p.estaCheia() == false){
-				numero = p2.remover();
-                                p.inserir(numero);
-				System.out.println("Removendo de p2/Inserido em p1 "+ numero +"\n");
+        for (int j = 0; j < 3; j++) {
+
+            numero = p2.remover();
+            p.inserir(numero);
+            System.out.println("Removendo de p2/Inserido em p1 " + numero + "\n");
+
+        }
     }
-}}
+}

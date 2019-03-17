@@ -6,15 +6,15 @@ import java.util.Scanner;
 public class questao05 {
 
     public static void main(String[] args) {
-        Scanner c = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         Pilha<Integer> p = new Pilha<>(3);
         Pilha<Integer> p2 = new Pilha<>(10);
         
         int numero = 0;
 
         while (p.estaCheia() != true) {
-            System.out.print("informe o numero da placa do carro entrando : ");
-            int placa = c.nextInt();
+            System.out.print("Insira o numero da placa do carro entrando : ");
+            int placa = scn.nextInt();
             p.inserir(placa);
             System.out.println("Entrando carro " + placa);
         }
@@ -22,8 +22,8 @@ public class questao05 {
         Integer op = 0;
         while ((p.estaVazia() != true) && op != 2) {
             numero = 0;
-            System.out.print("informe o numero da placa do carro a ser  : ");
-            int saida = c.nextInt();
+            System.out.print("Insira o numero da placa do carro a ser  : ");
+            int saida = scn.nextInt();
 
             Integer placa = p.remover();
             while (placa != saida) {
@@ -44,7 +44,7 @@ public class questao05 {
             }
             if (p.estaVazia() != true) {
                 System.out.println("deseja retirar mais algum veículo digite 1 (sim) e 2 (não)");
-                int escolha = c.nextInt();
+                int escolha = scn.nextInt();
                 op = escolha;
             }
         }

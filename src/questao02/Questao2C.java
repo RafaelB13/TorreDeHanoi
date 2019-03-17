@@ -1,15 +1,14 @@
 
 package questao02;
-
 import pilha.Pilha;
 
-public class Q2 {
+public class Questao2C {
     
     public static void main(String[] args) {
         
         Pilha<Character> p = new Pilha<>(10);
         
-        String s = "{[A+B*(C+D)+E]}";
+        String s = "(A+B)-{C+D}-[C-D]";
         
         boolean flagerro=false;
             for (int i = 0; i < s.length(); i++) {

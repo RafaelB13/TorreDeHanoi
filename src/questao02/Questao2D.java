@@ -2,13 +2,13 @@ package questao02;
 
 import pilha.Pilha;
 
-public class Q2a {
+public class Questao2D {
 
     public static void main(String[] args) {
 
         Pilha<Character> p = new Pilha<>(10);
 
-        String s = "(A+B})";
+        String s = "((H))*{([J+K])}";
 
         boolean flagerro = false;
         for (int i = 0; i < s.length(); i++) {

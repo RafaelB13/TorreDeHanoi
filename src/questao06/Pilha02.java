@@ -1,4 +1,4 @@
-package pilha;
+package questao06;
 
 public class Pilha02<T> {
 

@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package questao01;
-
-import pilha.Pilha02;
+package questao06;
 
 /**
  *
  * @author 312182006
  */
-public class QUESTAO06 {
+public class Questao06 {
     
     public static void main(String[] args) {
         
